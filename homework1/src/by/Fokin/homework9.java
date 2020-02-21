@@ -2,7 +2,7 @@ package by.Fokin;
 
 import java.util.Scanner;
 
-public class homework12 {
+public class homework9 {
 
     public static void main(String[] args) {
         System.out.println("Сколько чисел вы хотите ввести");
