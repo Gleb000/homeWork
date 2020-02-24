@@ -18,51 +18,58 @@ public class homework6_2 {
             b = "January";
             c += 1;
         }
-        else if (a == 31 && b.equals("January")) {
+        if (a == 31 && b.equals("January")) {
             a = 1;
             b = "February";
         }
-        else if (a == 29 && b.equals("February")) {
-            a = 1;
-            b = "March";
+        if (c % 4 == 0) { // проверка является ли год високосным!
+            if (a == 29 && b.equals("February")) {
+                a = 1;
+                b = "March";
+            }
         }
-        else if (a == 31 && b.equals("March")) {
+        else {
+            if (a == 28 && b.equals("February")) {
+                a = 1;
+                b = "March";
+            }
+        }
+        if (a == 31 && b.equals("March")) {
             a = 1;
             b = "April";
         }
-        else if (a == 30 && b.equals("April")) {
+        if (a == 30 && b.equals("April")) {
             a = 1;
             b = "May";
         }
-        else if (a == 31 && b.equals("May")) {
+        if (a == 31 && b.equals("May")) {
             a = 1;
             b = "June";
         }
-        else if (a == 30 && b.equals("June")) {
+        if (a == 30 && b.equals("June")) {
             a = 1;
             b = "July";
         }
-        else if (a == 31 && b.equals("July")) {
+        if (a == 31 && b.equals("July")) {
             a = 1;
             b = "August";
         }
-        else if (a == 31 && b.equals("August")) {
+        if (a == 31 && b.equals("August")) {
             a = 1;
             b = "September";
         }
-        else if (a == 30 && b.equals("September")) {
+        if (a == 30 && b.equals("September")) {
             a = 1;
             b = "October";
         }
-        else if (a == 31 && b.equals("October")) {
+        if (a == 31 && b.equals("October")) {
             a = 1;
             b = "November";
         }
-        else if (a == 30 && b.equals("November")) {
+        if (a == 30 && b.equals("November")) {
             a = 1;
             b = "December";
-        }
-        else {
+        } else {
             a += 1;
         }
         System.out.println("Tomorrow's date: " + a + " " + b + " " + c + " year");
