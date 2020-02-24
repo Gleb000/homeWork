@@ -2,7 +2,7 @@ package by.Fokin;
 
 import java.util.Scanner;
 
-public class homework16 {
+public class homework14 {
     public static void main(String[] args) {
         System.out.println("Введите кол-во оценок");
         Scanner scan = new Scanner(System.in);
