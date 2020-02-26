@@ -2,9 +2,9 @@ package by.Fokin;
 
 import java.util.Scanner;
 
-public class homework13_1 {
+public class homework13_2 {
     public static void main(String[] args) {
-        while (true) {
+        while (true) { // постоянный поиск простых чисел
             System.out.println("Введите число");
             Scanner scan = new Scanner(System.in);
             int a = scan.nextInt();
@@ -19,8 +19,6 @@ public class homework13_1 {
                     System.out.println("Число простое");
                 }
             }
-            if(g == 1)
-                break;
         }
     }
 }
