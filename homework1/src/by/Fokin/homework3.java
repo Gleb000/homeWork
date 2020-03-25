@@ -8,6 +8,9 @@ public class homework3 {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int n = a % 10;
+        if (n < 0) {
+            n *= -1;
+        }
         if (n == 7) {
             System.out.println("Последняя цифра числа " + a + " 7");
         }
