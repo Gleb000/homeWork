@@ -2,7 +2,7 @@ package by.Fokin;
 
 import java.util.Scanner;
 
-public class homework12 {
+public class Homework12 {
 
     public static void main(String[] args) {
         System.out.println("Введите число");
@@ -28,7 +28,11 @@ public class homework12 {
         }
         int number = 1;
         int h = y % 3;
+
         while (true) {
+            if(h == 0) {
+                break;
+            }
             b = sum % 10;
             sum /= 10;
             System.out.print(b);
